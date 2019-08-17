@@ -24,6 +24,10 @@ hr {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -536,6 +540,35 @@ div.event {
 
 /* Work Section */
 
+.work-preview img {
+    display: block;
+}
+
+.work-item {
+    border: 2px solid #f5f5f5;
+    min-height: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.work-content {
+    padding: 2rem!important;
+    box-sizing: border-box;
+}
+
+.work-item img {
+    display: block;
+}
+
+.work-item {
+    margin-bottom: 1rem;
+}
+
+.work-subheader {
+    font-size: 1.1rem;
+    margin-top: .5rem;
+    line-height: 1.2;
+}
 /* Contact Section */
 
 #contact {
