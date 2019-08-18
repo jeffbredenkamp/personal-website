@@ -14,3 +14,14 @@ $(document).ready(function($) {
 	});
 
 });
+
+$(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop();
+
+		$('section').each(function(i) {
+				if ($(this).position().top <= scrollDistance) {
+						$('nav ul li a.active').removeClass('active');
+						$('nav ul li a').eq(i).addClass('active');
+				}
+		});
+}).scroll();

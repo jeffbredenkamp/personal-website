@@ -46,9 +46,9 @@
 
             <nav class="social-media">
                 <ul>
-                    <li><img src="img/codepen.svg" alt="codepen" class="social-icon" /></li>
-                    <li><img src="img/github.svg" alt="github" class="social-icon" /></li>
-                    <li><img src="img/linkedin.svg" alt="LinkedIn" class="social-icon" /></li>
+                    <li><a href="#"><img src="img/codepen.svg" alt="codepen" class="social-icon" /></a></li>
+                    <li><a href="#"><img src="img/github.svg" alt="github" class="social-icon" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/jeffbredenkamp/"><img src="img/linkedin.svg" alt="LinkedIn" class="social-icon" /></a></li>
                 </ul>
             </nav>
         </div>
@@ -112,11 +112,6 @@
                         <div class="progress-bar-value value-80"></div>
                     </div>
 
-                    <p><strong>WCAG</strong></p>
-                    <div class="progress-bar">
-                        <div class="progress-bar-value value-70"></div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -167,46 +162,81 @@
             <div class="row">
                 <div class="column">
                     <p class="preheader">My work</p>
-                    <h2>Recent projects.</h2>
+                    <h2>Personal projects.</h2>
 
                     <div class="row">
                         <div class="column">
-                            <div class="work-item">
-                                <a href="#work-one" rel="modal:open"><img src="img/work-emerald-tablet-thumb.jpg" alt="Emerald Tablet Beer label" /></a>
+                            <div class="portfolio-item work-one">
+                                <a href="#work-one" rel="modal:open">
+                                    <div class="caption">
+                                        <h3 class="portfolio-item-header">Emerald Tablet Craft Beer</h3>
+                                        <ul>
+                                            <li>Graphic Design</li>
+                                            <li>Product Design</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="work-one" class="modal">
+                                <div class="row">
+                                    <div class="column work-preview">
+                                        <img src="img/work-emerald-tablet.png" alt="Emerald Tablet Beer Label" />
+                                    </div>
+
+                                    <div class="column work-content">
+                                        <h3>Emerald Tablet Beer Label</h3>
+
+                                        <p class="work-subheader">A seemingly magical process of transformation, creation, or combination.</p>
+
+                                        <h4>What is Emerald Tablet?</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="column">
+                            <div class="portfolio-item work-two">
+                                <a href="#work-two" rel="modal:open">
+                                    <div class="caption">
+                                        <h3 class="portfolio-item-header">Take a Worm for a Walk Show Poster</h3>
+                                        <ul>
+                                            <li>Graphic Design</li>
+                                            <li>Poster Design</li>
+                                        </ul>
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
                         <div class="column">
-                            <div class="work-item">
-                                <a href="#work-one" rel="modal:open"><img src="img/music-poster-thumb.jpg" alt="Punk show poster" /></a>
+                            <div class="portfolio-item work-three">
+                                <a href="#work-three" rel="modal:open">
+                                    <div class="caption">
+                                        <h3 class="portfolio-item-header">CD Cover</h3>
+                                        <ul>
+                                            <li>Graphic Design</li>
+                                            <li>Product Design</li>
+                                        </ul>
+                                    </div>
+                                </a>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="column">
+
                         </div>
 
                         <div class="column">
-                            <div class="work-item">
-                                <a href="#work-one" rel="modal:open"><img src="img/cd-cover-thumb.jpg" alt="Cd cover" /></a>
-                            </div>
+
                         </div>
                     </div>
 
-                    <!-- Modals -->
-
-                    <div id="work-one" class="modal">
-                        <div class="row">
-                            <div class="column work-preview">
-                                <img src="img/work-emerald-tablet.png" alt="Emerald Tablet Beer Label" />
-                            </div>
-
-                            <div class="column work-content">
-                                <h3>Emerald Tablet Beer Label</h3>
-
-                                <p class="work-subheader">A seemingly magical process of transformation, creation, or combination.</p>
-
-                                <h4>What is Emerald Tablet?</h4>
-
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
