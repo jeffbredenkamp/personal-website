@@ -319,7 +319,19 @@ header nav ul li a.active {
 
 }
 
-header .hamburger {}
+header .mobile-toggle {
+    display: none;
+    border: 0.1rem solid #FE4641;
+    background: transparent;
+    padding: 0 1.5rem 0 1.5rem;
+    line-height: 2;
+    text-transform: uppercase;
+    border-radius: .4rem;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 auto;
+}
 
 /* Intro Section */
 
@@ -861,5 +873,31 @@ header a:focus,
     
     .modal a.close-modal {
         background: #fff;
+    }
+    
+    header .mobile-toggle {
+        display: block;
+    }
+    
+    #navbar-items {
+        display: none;
+        padding: 1.2rem;
+        width: 100%;
+        background: #222430;
+        z-index: 10;
+        position: absolute;
+        right: 0;
+        box-sizing: border-box;
+        animation: fadeIn .35s 1 0s linear;
+    }
+    
+    header nav ul li {
+        display: block;
+        padding: .5rem 0;
+    }
+    
+    .open-nav {
+        height: auto;
+        display: block !important;
     }
 }
