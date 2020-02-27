@@ -4,12 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>Jeff Bredenkamp - Web Designer</title>
-    <meta name="description" content="">
+    <meta name="description" content="Personal website of Jeff Bredenkamp Web Designer/Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/jquery.modal.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
 
 </head>
@@ -48,8 +53,8 @@
 
             <nav class="social-media">
                 <ul>
-                    <li><a href="#"><img src="img/codepen.svg" alt="codepen" class="social-icon" /></a></li>
-                    <li><a href="#"><img src="img/github.svg" alt="github" class="social-icon" /></a></li>
+                    <li><a href="https://codepen.io/jeffbredenkamp"><img src="img/codepen.svg" alt="codepen" class="social-icon" /></a></li>
+                    <li><a href="https://www.behance.net/jeffbredenkamp"><img src="img/behance.svg" alt="Behance" class="social-icon" /></a></li>
                     <li><a href="https://www.linkedin.com/in/jeffbredenkamp/"><img src="img/linkedin.svg" alt="LinkedIn" class="social-icon" /></a></li>
                 </ul>
             </nav>
@@ -130,16 +135,22 @@
                     <h2>My Experience.</h2>
 
                     <div class="timeline">
-                        <div class="position-wrap">
+                        <div class="position-wrap right">
                             <div class="position">
                                 <h3>August 2017 - Present</h3>
                                 <p><strong>Senior Web Designer</strong> - Cofense</p>
                             </div>
                         </div>
+                        <div class="position-wrap">
+                            <div class="position">
+                                <h3>October 2016 - August 2017</h3>
+                                <p><strong>Web Designer</strong> - Cofense</p>
+                            </div>
+                        </div>
                         <div class="position-wrap right">
                             <div class="position">
-                                <h3>October 2015 - August 2017</h3>
-                                <p><strong>Web Designer</strong> - Cofense</p>
+                                <h3>October 2015 - October 2016</h3>
+                                <p><strong>Associate Web Designer</strong> - Cofense</p>
                             </div>
                         </div>
                         <div class="position-wrap">
@@ -181,20 +192,7 @@
                             </div>
 
                             <div id="work-one" class="modal">
-                                <div class="row">
-                                    <div class="column work-preview">
-                                        <img src="img/work-emerald-tablet.png" alt="Emerald Tablet Beer Label" />
-                                    </div>
-
-                                    <div class="column work-content">
-                                        <h3>Emerald Tablet Beer Label</h3>
-
-                                        <p class="work-subheader">A seemingly magical process of transformation, creation, or combination.</p>
-
-                                        <h4>What is Emerald Tablet?</h4>
-
-                                    </div>
-                                </div>
+                                <img src="img/work-emerald-tablet.png" alt="" />
                             </div>
 
                         </div>
@@ -211,6 +209,11 @@
                                     </div>
                                 </a>
                             </div>
+                            
+                            
+                            <div id="work-two" class="modal">
+                                <img src="img/work02.png" alt="" />
+                            </div>
                         </div>
 
                         <div class="column">
@@ -225,19 +228,62 @@
                                     </div>
                                 </a>
                             </div>
+                            
+                            <div id="work-three" class="modal">
+                                <img src="img/work-cd-2.png" alt="" />
+                            </div>
                         </div>
                     </div>
 
                     <div class="row">
-
                         <div class="column">
+                            <div class="portfolio-item work-four">
+                                <a href="#work-four" rel="modal:open">
+                                    <div class="caption">
+                                        <h3 class="portfolio-item-header">Phishing Simulator UI</h3>
+                                        <ul>
+                                            <li>User Interface</li>
+                                            <li>User Experience</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="work-four" class="modal">
+                                <img src="img/phishing-ui.png" alt="" />
+                            </div>
 
                         </div>
 
                         <div class="column">
 
+                                <div class="portfolio-item work-five">
+                                    <a href="#work-five" rel="modal:open">
+                                        <div class="caption">
+                                            <h3 class="portfolio-item-header">Harmill Systems Website</h3>
+                                            <ul>
+                                                <li>User Interface</li>
+                                                <li>Web Design</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+    
+                                <div id="work-five" class="modal">
+                                    <img src="img/harmil mockup.png" alt="" />
+                                </div>
+
+
                         </div>
+
+                        <div class="column">
+
+
+                        </div>
+
                     </div>
+
+
 
 
                 </div>
@@ -295,19 +341,16 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.modal.min.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146077531-1"></script>
     <script>
-        window.ga = function() {
-            ga.q.push(arguments)
-        };
-        ga.q = [];
-        ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('set', 'transport', 'beacon');
-        ga('send', 'pageview')
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-146077531-1');
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
 
 </html>

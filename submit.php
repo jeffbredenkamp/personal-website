@@ -27,8 +27,6 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['message'] != ''){
 
 }
 
-// otherwise, let the spammer think that they got their message through
-
 // uncomment these lines to redirect instead of displaying HTML
 //header('Location: http://www.mysite.com/thankyou.html');
 //exit('Redirecting you to http://www.mysite.com/thankyou.html');
@@ -37,8 +35,10 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['message'] != ''){
 <!DOCTYPE HTML>
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>Thanks for your message!</title>
 
-<title>Thanks!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
@@ -53,7 +53,7 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['message'] != ''){
 <h1>Thanks</h1>
 <p>I'll get back to you as soon as possible.</p>
             
-            <p>Return to main page</p>
+                <p><a href="index.html">Return to main page</a></p>
             </div>
         </div>
     </div>

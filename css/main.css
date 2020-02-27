@@ -1,4 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+
+@font-face {
+    font-family: 'noway';
+    src: url('fonts/noway-bold-webfont.eot');
+    src: url('fonts/noway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/noway-bold-webfont.woff2') format('woff2'),
+         url('fonts/noway-bold-webfont.woff') format('woff'),
+         url('fonts/noway-bold-webfont.ttf') format('truetype'),
+         url('fonts/noway-bold-webfont.svg#nowaybold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'noway';
+    src: url('fonts/noway-regular-webfont.eot');
+    src: url('fonts/noway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/noway-regular-webfont.woff2') format('woff2'),
+         url('fonts/noway-regular-webfont.woff') format('woff'),
+         url('fonts/noway-regular-webfont.ttf') format('truetype'),
+         url('fonts/noway-regular-webfont.svg#nowayregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
 
 
 /* ==========================================================================
@@ -12,7 +38,7 @@ html {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'noway', sans-serif;
 }
 
 hr {
@@ -168,6 +194,11 @@ img {
     max-width: 50%;
 }
 
+.row .column.column-55 {
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+
 .row .column.column-60 {
     flex: 0 0 60%;
     max-width: 60%;
@@ -234,6 +265,8 @@ h4,
 h5,
 h6 {
     line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -255,7 +288,7 @@ h3 {
 
 h1:after,
 h2:after {
-    height: .3rem;
+    height: .4rem;
     display: block;
     content: "";
     background-color: #FE4641;
@@ -264,19 +297,23 @@ h2:after {
 }
 
 h1:after {
-    width: 4rem;
+    width: 5rem;
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 h2:after {
-    width: 3rem;
+    width: 4rem;
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
 }
 
 p {
     line-height: 1.6;
+}
+
+a {
+    color: #FE4641;
 }
 
 /* Header */
@@ -311,7 +348,12 @@ header nav ul li:last-child {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: 700;
+}
+
+header nav ul li a:hover {
+    color: #FE4641;
 }
 
 header nav ul li a.active {
@@ -356,7 +398,7 @@ header .mobile-toggle {
     text-transform: uppercase;
     margin: 0 0 1rem 0;
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: 700;
 }
 
 #intro .intro-header {
@@ -370,7 +412,7 @@ header .mobile-toggle {
     text-transform: uppercase;
     margin: 0;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 700;
     margin-bottom: 2rem;
 }
 
@@ -381,11 +423,11 @@ header .mobile-toggle {
     text-transform: uppercase;
     border-radius: .4rem;
     font-weight: 700;
-    padding: 0 2.5rem 0 2.5rem;
+    padding: .5rem 2.5rem 0 2.5rem;
     line-height: 3.4rem;
     text-align: center;
     border: 0.1rem solid #FE4641;
-    background-image: url("../img/arrow-down.svg");
+    background-image: url(../img/arrow-down.svg);
     background-size: 12px;
     background-repeat: no-repeat;
     background-position: 85% -40px;
@@ -436,8 +478,9 @@ header .mobile-toggle {
     color: #FE4641;
     font-size: 1.2rem;
     font-weight: 700;
-    margin: 0 0 .3rem 0;
+    margin: 0 0 1rem 0;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 #about {
@@ -510,20 +553,20 @@ div.event {
 }
 
 .position {
-    padding: 1.5rem;
+    padding: 2rem 2rem 1.5rem 2rem;
     background-color: #fff;
     position: relative;
     border-radius: 6px;
 }
 
 .position h3 {
-    margin-top: 0;
-    font-size: 1.2rem;
+    margin: 0 0 .5rem 0;
 }
 
-.position p:last-child {
-    margin-bottom: 0;
+.position p {
+    margin: 0;
 }
+
 
 .position strong {
     color: #FE4641;
@@ -536,7 +579,7 @@ div.event {
     border-right: 0;
     position: absolute;
     right: 1.8rem;
-    top: 1.5rem;
+    top: 1.8rem;
 }
 
 .position-wrap.right:before {
@@ -575,9 +618,30 @@ div.event {
     display: block;
 }
 
+.work-three-preview {
+    background: url(../img/work-cd-2.png);
+}
+
+.work-two-preview {
+    background: url(../img/work-poster.png);
+}
+
+.work-one-preview {
+    background: url(../img/work-emerald-tablet.png);
+}
+
+.work-preview {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .work-content {
-    padding: 2rem!important;
+    padding: 2rem 2rem 2rem 2rem!important;
     box-sizing: border-box;
+    height: 550px;
+    overflow-y: scroll;
+    margin-right: 1rem;
 }
 
 .work-one {
@@ -592,6 +656,16 @@ div.event {
 
 .work-three {
     background: url(../img/cd-cover-thumb.jpg);
+    background-position: center;
+}
+
+.work-four {
+    background: url(../img/phishing-ui-thumb.png);
+    background-position: center;
+}
+
+.work-five {
+    background: url(../img/harmill-thumb.png);
     background-position: center;
 }
 
@@ -709,7 +783,7 @@ div.event {
     font-weight: 700;
     letter-spacing: .1rem;
     line-height: 3.4rem;
-    padding: 0 2.5rem;
+    padding: .5rem 2.5rem 0 2.5rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -874,6 +948,7 @@ header a:focus,
     
     .modal a.close-modal {
         background: #fff;
+        right: 12px!important;
     }
     
     header .mobile-toggle {
@@ -901,4 +976,34 @@ header a:focus,
         height: auto;
         display: block !important;
     }
+    
+    .work-one-preview, .work-two-preview, .work-three-preview {
+        min-height: 300px;
+    }
+    
+    .work-content {
+        height: auto;
+        overflow-y: auto;
+    }
+    
+    .row .column.column-60 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+#thanks {
+    background: #222430;
+    height: 100vh;
+}
+
+#thanks h1 {
+    color: #fff;
+}
+
+#thanks p {
+    line-height: 1.6;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #fff;
 }

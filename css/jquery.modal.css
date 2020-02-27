@@ -25,9 +25,7 @@
   vertical-align: middle;
   position: relative;
   z-index: 2;
-  max-width: 960px;
   box-sizing: border-box;
-  width: 100%;
   background: #fff;
   padding: 0;
   -webkit-border-radius: 1rem;
@@ -44,10 +42,14 @@
   overflow: hidden;
 }
 
+.modal img {
+    display: block;
+}
+
 .modal a.close-modal {
     position: absolute;
     top: 12px;
-    right: 12px;
+    right: 22px;
     display: block;
     width: 30px;
     height: 30px;
